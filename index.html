@@ -1,178 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopcart</title>
-    <link rel="icon" type="images/x-icon" href="/Assets/Images/logo.png" />
-     <link rel="stylesheet" href="/CSS/bootstrap.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="/CSS/all.min.css" />
     <link rel="stylesheet" href="/CSS/index.css" />
 
     <!-- Owl Carousel CSS -->
+   
+  
     <script src="/JS/jquery-3.6.0.min.js"></script>
     <script src="/JS/lottie.min.js"></script>
+    <script src="/JS/gsap.min.js"></script>
     <link rel="stylesheet" href="/CSS/owl.carousel.min.css" />
     <link rel="stylesheet" href="/CSS/owl.theme.default.css" />
     <script src="/JS/owl.carousel.min.js"></script>
-    <script src="/JS/bootstrap.bundle.min.js"></script>
-    <script src="/index.js"></script>
-
     
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
-        <div class="container-md">
-          <a href="#">
-            <div class="d-flex align-items-center ">
-                <img
-                class="nav__img"
-                style="width: 60px"
-                src="/Assets/Images/logo-nav.png"
-                alt=""
-                srcset=""
-              />
-              <h4 class="nav-logo-name" >Shopcart</h4>
-              </div>
-          </a>
-  
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <!-- <li class="nav-item">
-                <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
-                  >Home</a
-                >
-              </li> -->
+    <script src="/JS/bootstrap.bundle.min.js"></script>
+    
+    <script src="/index.js"></script>
+    <title>Shopcart</title>
+    <link rel="icon" type="images/x-icon" href="/Assets/Images/logo.png" />
 
-              <li>
-                <div class="dropdown">
-                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Category
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                     <div class=" w-100 p-1 py-3">
-         Popular Categories
-                     </div>
-                     <div class="container-md">
-                        <div class="row">
-                      <a href="#">
-                        <div class="d-flex justify-content-evenly    " style="background-color: #F5F6F6;">
-                            <div class="col-sm-6">
-                                <img class=" mx-2   " style="width: 80px;" src="/Assets/Images/chair.png" alt="" />
-                              </div>
-                              <div>
-                                <h5 class=" ">Furniture</h5>
-                                <small class="">240 Item Available</small>
-                              </div>
-                         </div>
-                      </a>
-                         <hr>
-                      <a href="#">
-                        <div class="d-flex justify-content-evenly    " style="background-color: #F5F6F6;">
-                            <div class="col-sm-6">
-                                <img class=" mx-2   " style="width: 80px;" src="/Assets/Images/bag.png" alt="" />
-                              </div>
-                              <div>
-                                <h5 class=" ">Hand Bag</h5>
-                                <small class="">290 Item Available</small>
-                              </div>
-                         </div>
-                      </a>
-                         <hr>
-                      <a href="#">
-                        <div class="d-flex justify-content-evenly    " style="background-color: #F5F6F6;">
-                            <div class="col-sm-6">
-                                <img class=" mx-2   " style="width: 80px;" src="/Assets/Images/shoe.png" alt="" />
-                              </div>
-                              <div>
-                                <h5 class=" ">Shoe</h5>
-                                <small class="">240 Item Available</small>
-                              </div>
-                         </div>
-                      </a>
-                         <hr>
-                      <a href="#">
-                        <div class="d-flex justify-content-evenly    " style="background-color: #F5F6F6;">
-                            <div class="col-sm-6">
-                                <img class=" mx-2   " style="width: 80px;" src="/Assets/Images/Book.png" alt="" />
-                              </div>
-                              <div>
-                                <h5 class=" ">Book</h5>
-                                <small class="">240 Item Available</small>
-                              </div>
-                         </div>
-                      </a>
-                         <hr>
-               
-                     
-                         
+   
+  </head>
+  <body>
+    <div class="pt-3 con" style="background-color: #003d29">
+      <div class="container-fluid container-md">
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="text-white" style="font-size: 12px">
+              <i class="fa-solid fa-phone"></i> +00129876599
+            </span>
+          </div>
 
-                      
-                         
-        
-                         
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-              </li>
-  
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
-                  >Deals</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
-                  >Whats's New</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
-                  >Delivery</a
-                >
-              </li>
-              <li class="nav-item">
-                <form class="form-inline my-2 my-lg-0 w-auto d-flex">
-                  <input
-                    class="form-control mr-sm-2"
-                    type="search"
-                    placeholder="Search Product"
-                    aria-label="Search"
-                  />
-                  <button
-                    class="btn btn-outline-success ms-2 my-sm-0"
-                    type="submit"
-                  >
-                    Search
-                  </button>
-                </form>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
-                  >Our Shop <i class="fa-solid fa-cart-shopping"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
-                  >Sign Out <i class="fa-solid fa-user"></i
-                ></a>
-              </li>
-            </ul>
+          <div class="col-sm-4">
+            <p class="text-white text-center" style="font-size: 12px">
+              Get 50% Off on Selected Items | Shop Now
+            </p>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle text-light"
+                data-bs-toggle="dropdown"
+                style="font-size: 12px"
+              >
+                Eng
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bangla</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle text-light"
+                data-bs-toggle="dropdown"
+                style="font-size: 12px"
+              >
+                Location
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dhaka</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </nav>
-</body>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container-md">
+        <a href="#">
+          <div class="d-flex align-items-center">
+            <img
+              class="nav__img"
+              style="width: 60px"
+              src="/Assets/Images/logo-nav.png"
+              alt=""
+              srcset=""
+            />
+            <h4 class="nav-logo-name">Shopcart</h4>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li>
+              <div class="dropdown" id="drop">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div class="w-100 p-1 py-3">Popular Categories</div>
+                  <div class="container-md">
+                    <div class="row">
+                      <a href="#">
+                        <div
+                          class="d-flex justify-content-evenly"
+                          style="background-color: #f5f6f6"
+                        >
+                          <div class="col-sm-6">
+                            <img
+                              class="mx-2"
+                              style="width: 80px"
+                              src="/Assets/Images/chair.png"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h5 class=" ">Furniture</h5>
+                            <small class="">240 Item Available</small>
+                          </div>
+                        </div>
+                      </a>
+                      <hr />
+                      <a href="#">
+                        <div
+                          class="d-flex justify-content-evenly"
+                          style="background-color: #f5f6f6"
+                        >
+                          <div class="col-sm-6">
+                            <img
+                              class="mx-2"
+                              style="width: 80px"
+                              src="/Assets/Images/bag.png"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h5 class=" ">Hand Bag</h5>
+                            <small class="">290 Item Available</small>
+                          </div>
+                        </div>
+                      </a>
+                      <hr />
+                      <a href="#">
+                        <div
+                          class="d-flex justify-content-evenly"
+                          style="background-color: #f5f6f6"
+                        >
+                          <div class="col-sm-6">
+                            <img
+                              class="mx-2"
+                              style="width: 80px"
+                              src="/Assets/Images/shoe.png"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h5 class=" ">Shoe</h5>
+                            <small class="">240 Item Available</small>
+                          </div>
+                        </div>
+                      </a>
+                      <hr />
+                      <a href="#">
+                        <div
+                          class="d-flex justify-content-evenly"
+                          style="background-color: #f5f6f6"
+                        >
+                          <div class="col-sm-6">
+                            <img
+                              class="mx-2"
+                              style="width: 80px"
+                              src="/Assets/Images/Book.png"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h5 class=" ">Book</h5>
+                            <small class="">240 Item Available</small>
+                          </div>
+                        </div>
+                      </a>
+                      <hr />
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
+                >Deals</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
+                >Whats's New</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
+                >Delivery</a
+              >
+            </li>
+            <li class="nav-item">
+              <form class="form-inline my-2 my-lg-0 w-auto d-flex">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search "
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success ms-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
+                >Our Shop <i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-dark" aria-current="page" href="#"
+                >Sign Out <i class="fa-solid fa-user"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- nav done -->
+<!-- header start -->
+    <div class="container-fluid header">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mt-md-5 ms-md-5">
+              <div id="animate">
+                <h1 class="header-text   text" >
+                  Shopping And
+                  Department Store.
+                </h1>
+                <p class="header-text-des mt-5 reveal-text line  ">
+                  Shopping is a bit of a relaxing hobby for me, which is sometimes troubling for the bank balance.
+                </p>
+                <a class="btn btn-success btn-large mt-4 reveal" href="#" >Learn More</a>
+              </div>
+              <div class="overlay-container-1">
+                
+                <!-- <img class="overlay-image-1" src="/Assets/cloth.png" alt="" /> -->
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 overlay-container">
+            <!-- <img
+              src="/Assets/Images/laptop.png"
+              alt="Your Image"
+              class="header-image img-fluid"
+            /> -->
+            <div id="animContainer"></div>
+            <!-- <img
+              src="/Assets/leaff.png"
+              alt="Overlay Image"
+              class="overlay-image"
+            /> -->
+          </div>
+        </div>
+      </div>
+
+
+    
+
+  </body>
 </html>

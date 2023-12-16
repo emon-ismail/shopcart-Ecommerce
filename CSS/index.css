@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 @font-face {
     font-family: "inter";
     src: url(/webfonts/Inter-Regular.ttf);
@@ -12,9 +19,129 @@
   }
   .nav-logo-name{
     font-family: "eina";
-    color: #003D29;
+    color: #066c4a;
+    font-weight: 400;
+  
   }
   a{
     text-decoration: none;
     color: #003D29;
+  }
+
+  .header-text {
+    font-family: "eina";
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+  }
+  
+  .header-text {
+    font-family: "eina";
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+  
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+      font-size: 48px;
+      line-height: 58px;
+  
+    }
+  
+    @media only screen and (max-width: 480px) {
+      font-size: 36px;
+      line-height: 46px;
+
+    }
+  }
+  
+
+  .header-text-des{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    font-family: "inter";
+   
+  }
+
+
+  .header {
+    background: url("/Assets/Images/img5.svg") no-repeat ;
+    background-size: cover;
+    color: #003D29;
+    padding: 60px;
+   
+  }
+     @media only screen and (max-width: 480px){
+      .header{
+        padding: 20px;
+      }
+     } 
+   .btn-success{
+    border-radius: 23px;
+    width: 200px;
+   padding: 15px;
+   font-family: "eina";
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 24px;
+   background-color: #003D29;
+   }
+ 
+   /* .reveal{
+    position: relative;
+    transform: translate X (150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active{
+    transform: translate X(0px);
+    opacity: 1;
+  } */
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html, body{
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+
+
+
+  
+  .overlay-container {
+    position: relative;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 120;
+  
+    right: 30px;
+    bottom: 5px;
+    width: 50%;
+    height: auto;
+    display: block;
   }
