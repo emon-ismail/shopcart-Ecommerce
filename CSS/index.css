@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "inter";
+    src: url(/webfonts/Inter-Regular.ttf);
+  }
+  @font-face {
+    font-family: "eina";
+    src: url(/webfonts/Eina02-SemiBold.ttf);
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    
+  }
+  .nav-logo-name{
+    font-family: "eina";
+    color: #003D29;
+  }
+  a{
+    text-decoration: none;
+    color: #003D29;
+  }
