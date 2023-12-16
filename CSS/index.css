@@ -88,21 +88,21 @@
    background-color: #003D29;
    }
  
-   /* .reveal{
+   
+
+  .reveal{
     position: relative;
-    transform: translate X (150px);
+    transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
   }
   
   .reveal.active{
-    transform: translate X(0px);
+    transform: translateY(0px);
     opacity: 1;
-  } */
+  }
 
 
-
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 *{
   padding: 0;
@@ -145,3 +145,70 @@
     height: auto;
     display: block;
   }
+
+  .categories-section h1{
+    margin-top: 100px;
+    font-family: "eina";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .img-card {
+    border-radius: 15px; /* Adjust the border-radius as needed for rounded corners */
+    overflow: hidden; /* Ensure content within the card is contained */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a lifted effect */
+  }
+  
+  .img-wrapper {
+    position: relative;
+  }
+  
+  .img-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 50%; 
+   margin: auto;
+    border-radius: 10px;
+    padding: 3px; /* Optional: Add padding to the caption */
+    text-align: center;
+    color: white;
+    font-family: "eina";
+    background-color: #003D29;
+    
+    font-size: 16px;
+    /* Add any other styles as needed */
+  }
+  
+
+  .img-wrapper {  
+    overflow: hidden; 
+  }
+  
+  .inner-img {
+    transition: 0.4s;
+  }
+  
+  .inner-img:hover {
+    transform: scale(1.5);
+  }
+  
+ 
+  
+  .img-wrapper {
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden; 
+  }
+
+
+  .best-deal-section h1{
+    margin-top: 100px;
+    font-family: "eina";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+  }
+

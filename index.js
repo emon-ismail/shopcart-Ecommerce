@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (var i = 0; i < reveals.length; i++) {
       var windowheight = window.innerHeight;
       var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 150;
+      var revealpoint = 110;
 
       if (revealtop < windowheight - revealpoint) {
         reveals[i].classList.add("active");
@@ -46,20 +46,30 @@ document.addEventListener("DOMContentLoaded", function () {
   //   }
   // })
 
+
+
+  t1.from("#animate h1,#offer p,#animContainer",{
+x:-200,
+opacity:0,
+stagger:0.01,
+  })
+  
+
   t1.from("nav img, nav h4, a, #drop",{
     y:-100,
     // duration:0.3,
     // delay:0.09,
     opacity:0,
-    // stagger:0.1
+    stagger:0.05,
+    // scale:3   image
   })
 
-  t1.from("#animate h1,p,#animContainer",{
-x:-200,
-opacity:0,
-stagger:0.1,
-  })
-
+  t1.from("#best-deal-anim",{
+    x:-100,
+    opacity:0,
+    // stagger:0.01,
+      })
+      
 
 
 
@@ -90,7 +100,7 @@ stagger:0.1,
         items: 2,
       },
       992: {
-        items: 3,
+        items: 4,
       },
     },
   });
